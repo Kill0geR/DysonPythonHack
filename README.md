@@ -5,10 +5,27 @@ DysonPythonHack is a library which allows users to control their dyson fans.
 ---
 # How does DysonPythonHack work?
 
-Just install the library and you are good to go
+First of all you have to clone the Project.
+
+Type this in your terminal:
+
 ````angular2html
-pip install DysonPythonHack
+git clone https://github.com/Kill0geR/DysonPythonHack
 ````
+
+Then change Directory:
+
+````angular2html
+cd DysonPythonHack
+````
+
+Install all requirements:
+
+````angular2html
+pip install -r requirements.txt
+````
+
+Now you are ready to use DysonPythonHack
 
 ---
 This how you use the Library when you now the IP-Address of your dyson
@@ -40,7 +57,6 @@ if not DYSON_IP:
     print("Failed to find Dyson IP")
     os._exit(0)
 
-print(f"Dyson IP: {DYSON_IP}")
 connect_dyson = DysonDevice(DYSON_IP, DYSON_SSID, DYSON_PASSWORD)
 connect_dyson.start(speed=5, rotation=True, night_mode=False, fan_mode=True)
 ````
