@@ -1,0 +1,3 @@
+BetterPrinting
+python-dotenv
+paho-mqtt
