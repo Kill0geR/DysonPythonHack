@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: DysonPythonHack
-Version: 0.0.1
+Version: 0.0.2
 Summary: Controlling Dyson Fan. For more information check out my website:https://pypi.org/project/DysonPythonHack/ and my github: https://github.com/Kill0geR/DysonPythonHack
 Home-page: 
 Author: Fawaz Bashiru
@@ -24,6 +24,12 @@ DysonPythonHack is a library which allows users to control their dyson fans.
 ---
 # How does DysonPythonHack work?
 
+Just install the library and you are good to go
+````angular2html
+pip install DysonPythonHack
+````
+
+---
 This how you use the Library when you now the IP-Address of your dyson
 
 ````python
@@ -53,6 +59,7 @@ if not DYSON_IP:
     print("Failed to find Dyson IP")
     os._exit(0)
 
+print(f"Dyson IP: {DYSON_IP}")
 connect_dyson = DysonDevice(DYSON_IP, DYSON_SSID, DYSON_PASSWORD)
 connect_dyson.start(speed=5, rotation=True, night_mode=False, fan_mode=True)
 ````
@@ -71,3 +78,7 @@ Change Log
 0.0.1 (20/08/2024)
 -----------------
 - First Release
+
+0.0.2 (21/08/2024)
+-----------------
+- Linux automatic dyson ip finder fix
