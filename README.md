@@ -66,4 +66,4 @@ connect_dyson.start(speed=5, rotation=True, night_mode=False, fan_mode=True)
 * speed: You can set the speed between 1 and 10
 * rotation: If you set rotation to True your Fan will rotate
 * night_mode: If you set night_mode to True your Fan will enter the Night mode 
-* fan_mod: If you set fan_mode to True your Fan will turn on
+* fan_mode: If you set fan_mode to True your Fan will turn on
